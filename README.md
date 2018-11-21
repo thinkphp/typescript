@@ -1,4 +1,4 @@
-#Hello TypeScript!
+# Hello TypeScript!
 
 ## sudo npm install -g typescript
 ## tsc filename.ts
