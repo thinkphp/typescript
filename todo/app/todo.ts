@@ -33,6 +33,23 @@ window.onload = function() {
 	  let task = <HTMLInputElement>document.getElementById("myInput")
 
 	   document.getElementById("myBtn").addEventListener('click', ()=>addTask(task.value) );
+
+	   document.getElementById("myInput").addEventListener('keyup', function(event) {if(event.key == 'Enter'){ 
+
+	   addTask(task.value) } });
+
+	   let list = document.querySelector('ul')
+
+
+	   list.addEventListener("click",(ev: MouseEvent) => {
+
+	        let element = ev.target as HTMLElement
+
+	            if(element.tagName === "LI") {
+
+	               element.classList.toggle('checked')
+	            } 
+	   }) 
 }
 
 function closeTask(p:Element) {
@@ -70,4 +87,4 @@ function addTask(task: string) {
  
 	  (<HTMLInputElement>document.getElementById("myInput")).value = ""	
       
-}
+}    

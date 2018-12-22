@@ -23,6 +23,18 @@ var TodoList = /** @class */ (function () {
 window.onload = function () {
     var task = document.getElementById("myInput");
     document.getElementById("myBtn").addEventListener('click', function () { return addTask(task.value); });
+    document.getElementById("myInput").addEventListener('keyup', function (event) {
+        if (event.key == 'Enter') {
+            addTask(task.value);
+        }
+    });
+    var list = document.querySelector('ul');
+    list.addEventListener("click", function (ev) {
+        var element = ev.target;
+        if (element.tagName === "LI") {
+            element.classList.toggle('checked');
+        }
+    });
 };
 function closeTask(p) {
     var node = p.parentNode;
