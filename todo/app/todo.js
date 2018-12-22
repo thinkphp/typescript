@@ -21,6 +21,7 @@ var TodoList = /** @class */ (function () {
     return TodoList;
 }());
 window.onload = function () {
+    console.log(window.localStorage);
     var task = document.getElementById("myInput");
     document.getElementById("myBtn").addEventListener('click', function () { return addTask(task.value); });
     document.getElementById("myInput").addEventListener('keyup', function (event) {
