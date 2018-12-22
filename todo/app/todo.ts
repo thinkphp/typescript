@@ -29,7 +29,7 @@ class TodoList {
 }
 
 window.onload = function() {
-	
+	  console.log(window.localStorage)
 	  let task = <HTMLInputElement>document.getElementById("myInput")
 
 	   document.getElementById("myBtn").addEventListener('click', ()=>addTask(task.value) );
