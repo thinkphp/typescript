@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>To Do List</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="app/todo.js"></script>
+</head>
+<body>
+
+<div id="add" class="header">
+<h2>My To Do List</h2>
+<input type="text" id="myInput" placeholder="Title...">
+<span id="myBtn" class="addBtn">Add</span>
+</div>
+
+<ul id="tasks"><ul>
+
+<script>
+
+
+//add a 'checked' symbol when clicking on a list item
+var list = document.querySelector('ul')
+    list.addEventListener('click', function(e){
+         if( e.target.tagName === "LI") {
+           e.target.classList.toggle('checked') 
+         } 
+    }, false)
+
+      
+</script>
+
+</body>
+</html>
