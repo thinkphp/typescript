@@ -246,5 +246,4 @@ TypeScript enhances JavaScript with static typing, making it easier to catch err
 This introduction covered the basics, but there are many more advanced features in TypeScript, like **decorators**, **type narrowing**, **conditional types**, and more, which you can explore as you gain more experience with the language.
 
 ### References 
-
 -https://cs.lmu.edu/~ray/notes/introtypescript/
