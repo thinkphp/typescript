@@ -244,3 +244,7 @@ console.log(add(2, 3));  // 5
 TypeScript enhances JavaScript with static typing, making it easier to catch errors early and write cleaner, more maintainable code. By using types, interfaces, classes, and generics, you can ensure your application logic is reliable and scales well as your project grows.
 
 This introduction covered the basics, but there are many more advanced features in TypeScript, like **decorators**, **type narrowing**, **conditional types**, and more, which you can explore as you gain more experience with the language.
+
+### References 
+
+-https://cs.lmu.edu/~ray/notes/introtypescript/
